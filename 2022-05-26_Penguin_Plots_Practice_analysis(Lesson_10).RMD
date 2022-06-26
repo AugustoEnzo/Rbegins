@@ -1,0 +1,36 @@
+---
+title: "Penguins Plots"
+author: "GDAC"
+date: '2022-06-26'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Penguins Plots: Practice analysis
+Notes: setting up my R enviroment by loading the `tidyverse` and `palmerpenguins` packages:
+
+```{r importing the libraries}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Seting the data
+```{r set the data source}
+penguins <- data(penguins)
+```
+
+## Visualizing the data
+```{r}
+View(penguins)
+```
+
+## Transforming the data
+```{r}
+penguins %>%
+  penguins %>%
+  mutate(penguins, body_mass_kg = body_mass_g / 1000, flipper_length_m = flipper_length_mm / 1000)
+```
+
