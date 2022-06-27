@@ -23,12 +23,12 @@ penguins <- data(penguins)
 ```
 
 ## Visualizing the data
-```{r}
+```{r visualizing the data}
 View(penguins)
 ```
 
 ## Transforming the data
-```{r}
+```{r transforming the data}
 penguins %>%
   penguins %>%
   mutate(penguins, body_mass_kg = body_mass_g / 1000, flipper_length_m = flipper_length_mm / 1000)
